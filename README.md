@@ -1,7 +1,3 @@
-# LevelUp! Lab for Serverless
-
-## Lab Overview And High Level Design
-
 Let's start with the High Level Design.
 ![High Level Design](./images/high-level-design.jpg)
 An Amazon API Gateway is a collection of resources and methods. For this tutorial, you create one resource (DynamoDBManager) and define one method (POST) on it. The method is backed by a Lambda function (LambdaFunctionOverHttps). That is, when you call the API through an HTTPS endpoint, Amazon API Gateway invokes the Lambda function.
@@ -166,6 +162,7 @@ Let's test our newly created function. We haven't created DynamoDB and the API y
 ![Execute test event](./images/execute-test.jpg)
 
 We're all set to create DynamoDB table and an API using our lambda as backend!
+
 
 ### Create DynamoDB Table
 
